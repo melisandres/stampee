@@ -1,0 +1,5 @@
+.boite-cartes-timbre-catalogue{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

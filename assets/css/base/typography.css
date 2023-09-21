@@ -1,0 +1,28 @@
+h1{
+    font-size: var(--text-xl);
+    font-family: var(--accent-font);
+}
+h2{
+    font-size: var(--text-lg);
+    font-family: var(--accent-font);
+}
+h3{
+    font-size: var(--text-lg);
+    font-family: var(--accent-font);
+}
+h4{
+    font-size: var(--text-md);
+    font-family: var(--accent-font);
+}
+h5{
+    font-size: var(--text-md);
+    font-family: var(--accent-font);
+}
+h6{
+    font-size: var(--text-sm);
+    font-family: var(--accent-font);
+}
+p{
+    font-size: var(--text-xxs);
+    font-family: var(--main-font);
+}

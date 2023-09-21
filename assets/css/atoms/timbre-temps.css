@@ -1,0 +1,9 @@
+.timbre-temps{
+    background-image:  url(../../icons/clock.svg);
+    background-size: cover;
+    transition: transform 0.3s;
+}
+
+.timbre-temps:hover{
+    transform: rotate(45deg);
+}

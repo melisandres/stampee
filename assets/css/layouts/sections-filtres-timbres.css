@@ -1,0 +1,11 @@
+.sections-filtres-timbres{
+    display: flex;
+
+    gap: var(--space-lg);
+}
+
+@media screen and (max-width: 882px) {
+    .sections-filtres-timbres{
+        flex-wrap: wrap;
+    }
+}

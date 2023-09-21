@@ -1,0 +1,52 @@
+.carte-timbre-catalogue{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: var(--space-xl);
+    padding-right: 0px;
+}
+
+.carte-timbre-catalogue .timbre-boutons{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);;
+}
+
+.carte-timbre-catalogue img{
+    max-height: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.carte-timbre-catalogue h4::after{
+    content: ":";
+}
+
+.carte-timbre-catalogue p{
+    line-height: 1.30;
+    letter-spacing: 0.05rem;
+    font-size: 15px;
+    max-width: 35ch;
+}
+
+.carte-timbre-catalogue img{
+    width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.carte-timbre-catalogue h4{
+   max-width: 14ch;
+}
+
+.carte-timbre-catalogue .text-timbre{
+    padding-right: var(--space-xl);
+}
+
+@media screen and (max-width: 882px) {
+    .carte-timbre-catalogue{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

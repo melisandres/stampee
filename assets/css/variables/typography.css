@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300;400;500&family=Hind+Guntur:wght@300;600&display=swap');
+
+
+:root{
+    --main-font: 'Hind Guntur', sans-serif;
+    --secondary-font: 'Fira Code', monospace;
+    --accent-font: 'Courier Prime', monospace;
+
+    --text-giant: 4.4rem;
+    --text-xxl: 3.6rem;
+    --text-xl: 3.027rem;
+    --text-lg: 2.545rem;
+    --text-md: 2.140rem;
+    --text-sm: 1.8rem;
+    --text-xs: 1.513rem;
+    --text-xxs: 1.262rem;
+
+    --text-btn: 3.052rem;
+}

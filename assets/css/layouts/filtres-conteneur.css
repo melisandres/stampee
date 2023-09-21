@@ -1,0 +1,16 @@
+.filtres-conteneur{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-betwee;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    
+}
+
+@media screen and (max-width: 882px) {
+    .filtres-conteneur{
+        position:static;
+        flex-wrap: wrap;
+    }
+}

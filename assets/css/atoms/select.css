@@ -1,0 +1,17 @@
+select {
+    -webkit-appearance: none;
+    border: solid 1px var(--accent-color-lighter);
+    background-color: white;
+    text-align: center;
+    padding: var(--space-lg);
+    font-size: var(--text-xxs);
+}
+
+select:active{
+    border: solid 2px var(--accent-color-light);
+}
+
+ select:focus{
+    border: solid 2px var(--accent-color-light);
+    background-color: white;
+}

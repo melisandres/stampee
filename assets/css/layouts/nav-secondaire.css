@@ -1,0 +1,12 @@
+.nav-secondaire{
+    display: flex;
+
+    background-color: var(--main-color-lighter);
+    padding: var(--space-xxl);
+
+}
+
+.nav-secondaire a{
+    padding: var(--space-xxl);
+    background-color: var(--main-color-lighter);
+}

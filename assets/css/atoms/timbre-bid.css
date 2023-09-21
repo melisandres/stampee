@@ -1,0 +1,22 @@
+.timbre-bid{
+    background-image: url(../../icons/price-tag.svg);
+    height: 50px;
+    aspect-ratio: 1/1;
+    border: solid transparent 1px;
+    background-color: transparent;
+    transform: rotate(-130deg);
+    background-size: cover;
+    transition: transform 0.3s;
+}
+
+.timbre-bid span{
+    position: absolute;
+    top: 48%; /* Adjust vertical positioning as needed */
+    left: 42%; /* Adjust horizontal positioning as needed */
+    transform: translate(-50%, -50%) rotate(135deg); /* Adjust the rotation angle */
+    color: red;
+}
+
+.timbre-bid:hover{
+    transform: scale(1.8) rotate(-100deg);
+}

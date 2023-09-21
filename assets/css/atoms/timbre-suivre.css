@@ -1,0 +1,14 @@
+.timbre-suivre{
+    background-image: url(../../icons/like.svg);
+    /* background-blend-mode:difference; */
+    background-size: cover;
+    transition: transform 0.3s;
+}
+.timbre-suivre:hover{
+    transform: rotate(45deg);
+}
+
+.timbre-suivre.active{
+    background-image: url(../../icons/love-folder.svg);
+    background-color: aquamarine;
+}
