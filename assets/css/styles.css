@@ -14,6 +14,7 @@
 @import url(components/filtres-catalogue.css);
 @import url(components/cate-timbre-vedette.css);
 @import url(components/carte-vedette-mini.css);
+@import url(components/section-radios.css);
 
 /*layouts*/
 @import url(layouts/sections-filtres-timbres.css);

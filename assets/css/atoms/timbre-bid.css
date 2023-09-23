@@ -14,9 +14,19 @@
     top: 48%; /* Adjust vertical positioning as needed */
     left: 42%; /* Adjust horizontal positioning as needed */
     transform: translate(-50%, -50%) rotate(135deg); /* Adjust the rotation angle */
-    color: red;
+    color: var(--main-color-darkest);
 }
+
+.timbre-bid[data-bid="front-runner"] {
+    filter: invert(48%) sepia(13%) saturate(1554%) hue-rotate(13deg) brightness(95%) contrast(92%);
+}
+
+.timbre-bid[data-bid="outbid"] span{
+    color: var(--tertiary-color-darker);
+}
+
 
 .timbre-bid:hover{
     transform: scale(1.8) rotate(-100deg);
+    cursor: pointer;
 }

@@ -1,0 +1,11 @@
+.section-radios div{
+    display: flex;
+    flex-direction: row;
+    padding-top: var(--space-lg);
+}
+
+.section-radios input{
+    /* appearance: none; */
+    outline: dotted black 2px;
+  
+}

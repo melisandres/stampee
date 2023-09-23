@@ -6,9 +6,10 @@
 }
 .timbre-suivre:hover{
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 .timbre-suivre.active{
     background-image: url(../../icons/love-folder.svg);
-    background-color: aquamarine;
+    filter: invert(10%) sepia(78%) saturate(4405%) hue-rotate(332deg) brightness(80%) contrast(112%);
 }
