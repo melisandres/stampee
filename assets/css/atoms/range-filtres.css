@@ -1,0 +1,49 @@
+/*reference: https://stackoverflow.com/questions/62834173/input-range-slider-replace-thumb-with-image-not-working*/
+
+.range-filtres{
+    width: 100px;
+}
+
+.range-filtres label{
+    padding-bottom: 25px;
+}
+
+.range-filtres input{
+    background-image: url(../../icons/star.svg);
+   /*  -webkit-appearance: none; */
+    width: 100px;
+    height: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background: var(--accent-color-light);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.range-filtres input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    border-radius: 50%;
+    background-image: url(../../icons/star.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .range-filtres input::-moz-range-thumb {
+    width: 23px;
+    height: 24px;
+    border: 0;
+    border-radius: 50%;
+    background-image:  url(../../icons/star.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+

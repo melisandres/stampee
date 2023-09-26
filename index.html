@@ -27,49 +27,67 @@
     <div class="sections-filtres-timbres">
         <div class="filtres-conteneur">
             <form class="filtres-catalogue">
-                <select name="theme" id="">theme
-                    <option value="">sujet de timbre</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="hamster">Hamster</option>
-                    <option value="parrot">Parrot</option>
-                    <option value="spider">Spider</option>
-                    <option value="goldfish">Goldfish</option>
-                </select>
+                <h2>trier: </h2>    
                 <div class="section-radios">
-                    <label for="condition">condition</label>
-                    <div>
-                        <input type="radio" name="condition" value="1">
-                        <input type="radio" name="condition" value="2">
-                        <input type="radio" name="condition" value="3">
-                        <input type="radio" name="condition" value="4">
-                        <input type="radio" name="condition" value="5">
+                    <div class="ascendant">
+                        <input type="radio" name="ordre-sujet" value="temps" id="temps">
+                        <label for="temps">
+                            temps&nbsp;restant
+                        </label>
+                    </div>
+                    <div class="ascendant">
+                        <input type="radio" name="ordre-sujet" value="condition" id="condition">
+                        <label for="condition">
+                            condition
+                        </label>
+                    </div>
+                    <div class="ascendant">
+                        <input type="radio" name="ordre-sujet" value="prix" id="prix">
+                        <label for="prix">
+                            prix
+                        </label>
                     </div>
                 </div>
-                <label>
-                    <input type="range" name="filter-condition" id="">
-                    condition
-                </label>
-                <label>
-                    <input type="checkbox" name="" id="">
-                    unhinged
-                </label>
-                <label>
-                    <input type="checkbox" name="" id="">
-                    rare
-                </label>
-                <label>
-                    <input type="checkbox" name="" id="">
-                    interesting
-                </label>
-                <label>
-                    <input type="checkbox" name="" id="">
-                    expensive
-                </label>
-                <label>
-                    <input type="checkbox" name="" id="">
-                    recent
-                </label>
+
+                <h2>filtrer: </h2>   
+                <select name="theme" id="">theme
+                    <option value="">sujet de timbre</option>
+                    <option value="animal">animal</option>
+                    <option value="art">art</option>
+                    <option value="historique">historique</option>
+                    <option value="nature">nature</option>
+                    <option value="personne">personne</option>
+                    <option value="vehicule">vehicule</option>
+                </select>
+
+                <div class="range-filtres">
+                    <label>
+                        condition
+                    </label>
+                    <input type="range" name="filter-condition" id="" min="0" max="5" step="1">
+                </div>
+                <div class="range-filtres">
+                    <label>
+                        rareté
+                    </label>
+                    <input type="range" name="filter-rareté" id="" min="0" max="5" step="1">
+                </div>
+                
+                <div class="checkbox-filtres">
+                    <div>
+                        <input type="checkbox" name="certifie" id="certifie">
+                        <label for="certifie">
+                            certifié
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="coup-de-coeur" id="coup-de-coeur">
+                        <label for="coup-de-coeur">
+                            coup de coeur
+                        </label>
+                    </div>
+                </div>
             </form>
 
             <div class="carte-vedette-mini">

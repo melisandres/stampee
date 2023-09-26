@@ -3,7 +3,7 @@ select {
     border: solid 1px var(--accent-color-lighter);
     background-color: white;
     text-align: center;
-    padding: var(--space-lg);
+    padding: var(--space-md);
     font-size: var(--text-xxs);
 }
 
@@ -13,5 +13,12 @@ select:active{
 
  select:focus{
     border: solid 2px var(--accent-color-light);
+    background-color: white;
+}
+
+select:hover{
+    cursor: pointer;
+/*     border: solid 2px var(--accent-color-darkest); */
+    outline: dotted 3px var(--accent-color-darkest);
     background-color: white;
 }
