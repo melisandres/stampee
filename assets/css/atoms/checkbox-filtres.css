@@ -22,7 +22,7 @@
     /* Remove most all native input styles */
     appearance: none;
     /* For iOS < 15 */
-  /*   background-color: var(--form-background); */
+    /*   background-color: var(--form-background); */
     /* Not removed via appearance */
     margin: 0;
     font: inherit;

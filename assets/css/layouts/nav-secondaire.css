@@ -1,12 +1,57 @@
 .nav-secondaire{
     display: flex;
-
     background-color: var(--main-color-lighter);
     padding: var(--space-xxl);
+    padding-top: 100px;
+    gap: 30px;
+    align-items:first baseline;
+    justify-content: space-between;
 
 }
 
 .nav-secondaire a{
     padding: var(--space-xxl);
     background-color: var(--main-color-lighter);
+    font-size: var(--text-md);
 }
+
+.nav-secondaire div{
+    line-height: 1.5em;
+}
+
+.nav-secondaire p{
+    padding-left: var(--space-xxl);
+}
+
+.nav-secondaire .terms-and-conditions{
+    font-size: var(--text-xs);
+}
+
+.nav-secondaire .nav-image{
+    background-image: url(../../icons/letter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+/* .nav-secondaire .contact::before{
+    content: "";
+    background-image: url(../../icons/letter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 40px;
+    min-height: 40px;
+    padding-top: 30%;
+}
+
+.nav-secondaire .terms-and-conditions::before{
+    content: "";
+    background-image: url(../../icons/book.svg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    min-width: 30px;
+    min-height: 30px;
+    padding-top: 30%;
+} */
