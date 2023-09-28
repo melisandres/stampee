@@ -15,6 +15,7 @@
 @import url(components/cate-timbre-vedette.css);
 @import url(components/carte-vedette-mini.css);
 @import url(components/section-radios.css);
+@import url(components/boite-timbre-seul.css);
 
 /*layouts*/
 @import url(layouts/sections-filtres-timbres.css);
@@ -33,5 +34,6 @@
 @import url(atoms/airmail-stripes.css);
 @import url(atoms/range-filtres.css);
 @import url(atoms/checkbox-filtres.css);
+@import url(atoms/image-principale.css);
 
 

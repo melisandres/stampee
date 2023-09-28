@@ -10,7 +10,6 @@
 
 .range-filtres input{
     background-image: url(../../icons/star.svg);
-   /*  -webkit-appearance: none; */
     width: 100px;
     height: 10px;
     padding-bottom: 10px;
@@ -22,7 +21,7 @@
     transition: opacity .2s;
 }
 
-.range-filtres input::-webkit-slider-thumb {
+.range-filtres input::-webkit-slider-thumb, .range-filtres input::-moz-range-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 23px;
@@ -30,18 +29,6 @@
     border: 0;
     border-radius: 50%;
     background-image: url(../../icons/star.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-
-  .range-filtres input::-moz-range-thumb {
-    width: 23px;
-    height: 24px;
-    border: 0;
-    border-radius: 50%;
-    background-image:  url(../../icons/star.svg);
-    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     cursor: pointer;

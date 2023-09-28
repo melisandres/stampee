@@ -34,24 +34,3 @@
     min-width: 40px;
     min-height: 40px;
 }
-
-/* .nav-secondaire .contact::before{
-    content: "";
-    background-image: url(../../icons/letter.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-width: 40px;
-    min-height: 40px;
-    padding-top: 30%;
-}
-
-.nav-secondaire .terms-and-conditions::before{
-    content: "";
-    background-image: url(../../icons/book.svg) ;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    min-width: 30px;
-    min-height: 30px;
-    padding-top: 30%;
-} */
