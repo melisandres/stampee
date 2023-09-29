@@ -4,7 +4,28 @@
 }
 .image-principale img{
     text-align: center;
-    max-width: 400px;
+    max-width: 350px;
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+
+@media screen and (max-width: 950px) {
+    .image-principale img{
+        max-width: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 669px) {
+    .image-principale{
+        max-width: 90%;
+        text-align: center;
+    }
+    
+    .image-principale img{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    
 }

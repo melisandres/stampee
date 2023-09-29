@@ -6,38 +6,56 @@
     border-bottom-right-radius: 150px;
     border-bottom-left-radius: 150px;
     border: solid 3px var(--secondary-color-lighter);
-    margin-left: clamp(3px, 7vw, 80px);
-    margin-right: clamp(3px, 7vw, 80px);
+    border-top: transparent;
+    margin-left: clamp(3px, 3.5vw, 70px);
+    margin-right: clamp(3px, 3.5vw, 70px);
+    padding-bottom: 50px;
 }
 
-.boite-timbre-seul header div{
+.boite-timbre-seul .details-petits-ecrans{
+    display: none;
+}
+
+/*le div des boutons*/
+.boite-timbre-seul main>div{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
     gap: var(--space-xl);
     padding-top: var(--space-md);
     padding-bottom: var(--space-lg);
+    padding-left: var(--space-xxxl);
+    padding-right: var(--space-xxxl);
 }
 
+/*nom du timbre & les boutons*/
+.boite-timbre-seul header {
+    width: 100%;
+}
+
+/*nom du timbre*/
 .boite-timbre-seul header h1{
-
+    text-align: center;
     padding-top: var(--space-md);
-
+    width: 100%;
 }
 
+/*flex contenant l'image et les texts*/
 .boite-timbre-seul main{
     display: flex;
     flex-direction: row;
     gap: var(--space-xl);
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-left: var(--space-xl);
     padding-right: var(--space-xl);
 }
 
+/*les sections contiennent du text*/
 .boite-timbre-seul main section{
-    max-width: 400px;
+    max-width: 300px;
     min-width: 200px;
     max-height: 250px;
     min-height: 200px;
@@ -45,31 +63,102 @@
     flex: 1;
 }
 
+/*titres des sections de text*/
 .boite-timbre-seul h2{
     padding-bottom: var(--space-md);
-}
-.boite-timbre-seul ul{
-    padding-left: var(--space-xl);
+    font-size: var(--text-sm);
 }
 
+/*listes des section text*/
+.boite-timbre-seul ul{
+    padding-left: var(--space-xl);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/*les infos injectés dans les détails*/
+.boite-timbre-seul li span{
+    font-weight: 200;
+}
+
+/*les elements text, sans les titres*/
+.boite-timbre-seul li, .boite-timbre-seul p{
+    font-size: var(--text-xxxs);
+}
+
+/*le point avant les elements li*/
 .boite-timbre-seul li::before {
     content: "";
     background: lightgray;
-    border-radius: 5px;
-    padding-inline: 5px;
-    margin-inline-end: 5px;
+    border-radius: 30px;
+    padding-inline: 13px;
+    margin-inline-end: 15px;
 }
 
+/*juste les éléments li*/
 .boite-timbre-seul li{
-    line-height: 1.5em;
+    line-height: 1.75em;
 }
 
 
-
-@media screen and (max-width: 600px){
+/*tablettes*/
+@media screen and (max-width: 950px) {
     .boite-timbre-seul{
-        margin-left: 3px;
-        margin-right: 3px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 70px;
+    }
+
+    .boite-timbre-seul main>div{
+        justify-content: center;
+    }
+    .boite-timbre-seul .details-petits-ecrans{
+        align-items: flex-start;
+        min-height: 300px;
+    }
+
+    .boite-timbre-seul .details-petits-ecrans{
+        display: flex;
+        flex-direction: column;
+        order: -1;
+    }
+
+    .boite-timbre-seul .details-petits-ecrans div{
+        padding-top: var(--space-lg);
+    }
+
+    .boite-timbre-seul .infos-grands-ecrans{
+        display: none;
+    }
+    .boite-timbre-seul .details-grands-ecrans{
+        display: none;
+    }
+
+
+    .boite-timbre-seul picture{
+        order: -1;
+/*         min-width: 100%;
+        text-align: center; */
+
+    }
+
+    .boite-timbre-seul main>div{
+        order: -1;
     }
     
+}
+
+/*cellulaires*/
+@media screen and (max-width: 600px){
+    .boite-timbre-seul{
+        margin-left: 2vw;
+        margin-right: 2vw;
+    } 
+    .boite-timbre-seul .details-petits-ecrans{
+        max-width: 80%;
+    }
+    .boite-timbre-seul main{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
