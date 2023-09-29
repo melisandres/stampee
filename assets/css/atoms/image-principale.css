@@ -1,7 +1,4 @@
-.image-principale{
 
-
-}
 .image-principale img{
     text-align: center;
     max-width: 350px;
@@ -21,7 +18,7 @@
         max-width: 90%;
         text-align: center;
     }
-    
+
     .image-principale img{
         max-width: 100%;
         text-align: center;

@@ -39,8 +39,19 @@
     gap: var(--space-xl);
 }
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 960px) {
     .carte-vedette-mini{
-        position:static;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .carte-vedette-mini{
+        flex-grow: 1;
+        margin-right: 6vw;
+        text-align: center;
+    }  
+    .carte-vedette-mini .timbre-boutons{
+        justify-content: center;
     }
 }

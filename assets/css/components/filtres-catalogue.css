@@ -19,8 +19,17 @@
   color: var(--main-color-dark);
  }
 
+@media screen and (max-width: 960px){
+    .filtres-catalogue{
+        padding-right: 25vw;
+    }
+}
 
-
+@media screen and (max-width: 740px){
+    .filtres-catalogue{
+        padding-right: var(--space-xxl);
+    }
+}
 
 
 
