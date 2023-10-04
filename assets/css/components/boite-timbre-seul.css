@@ -20,7 +20,7 @@
 .boite-timbre-seul main>div{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+
     width: 100%;
     gap: var(--space-xl);
     padding-top: var(--space-md);

@@ -2,26 +2,53 @@
     background-image:  url(../../icons/clock.svg);
     background-size: cover;
     transition: filter 0.3s, transform 0.3s;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
+.conteneur-timbre-temps{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+.timbre-temps~span{
+    max-width: 50px;
+}
+
+/*rotation forward and pointer for active auctions*/
 .timbre-temps[data-timeup="soon"]:hover, .timbre-temps[data-timeup="later"]:hover {
     transform: rotate(65deg);
     cursor: pointer;
 }
 
+/*color for soon*/
 .timbre-temps[data-timeup="soon"]{
     filter: invert(12%) sepia(78%) saturate(6280%) hue-rotate(357deg) brightness(91%) contrast(99%);
 }
 
+.timbre-temps[data-timeup="soon"]~span{
+    color: var(--secondary-color-dark);
+}
+
+/*color for later*/
 .timbre-temps[data-timeup="later"]{
     filter: invert(9%) sepia(53%) saturate(1627%) hue-rotate(193deg) brightness(96%) contrast(97%);
 }
 
+.timbre-temps[data-timeup="later"]~span{
+    color: var(--main-color-dark);
+}
+
+/*time-up over*/
 .timbre-temps[data-timeup="over"]{
-    
     filter: invert(79%) sepia(32%) saturate(218%) hue-rotate(355deg) brightness(84%) contrast(84%);
 }
 
+.timbre-temps[data-timeup="over"]~span{
+    color: var(--accent-color-dark);
+}
+
+/*rotation and color for hover on over*/
 .timbre-temps[data-timeup="over"]:hover{
     transform: rotate(-105deg);
     filter: invert(95%) sepia(7%) saturate(373%) hue-rotate(339deg) brightness(94%) contrast(87%);
