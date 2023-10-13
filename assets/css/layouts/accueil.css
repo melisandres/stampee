@@ -1,0 +1,48 @@
+.accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accueil main{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+.accueil h1{
+    z-index: 2;
+    margin-left: var(--space-lg);
+    align-self: center;
+    transition: translateX, .5s;
+    flex-shrink: 1;
+}
+
+.accueil h1::after{
+    content:"✈";
+    margin-left: var(--space-xxxl);
+    font-size: var(--text-xxl);
+    color: var(--main-color-light);
+}
+
+.accueil h1:hover{
+    transform: translateX(1em);
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .accueil main{
+        display: block;
+        position: relative;
+    }
+    .accueil h1{
+        position: absolute;
+        top: 45%;
+        margin-right: var(--space-xxxl);
+    }
+    .accueil h1::after{
+        color: var(--main-color-dark);
+    }
+
+}

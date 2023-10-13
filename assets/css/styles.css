@@ -15,6 +15,7 @@
 @import url(components/carte-vedette-mini.css);
 @import url(components/section-radios.css);
 @import url(components/boite-timbre-seul.css);
+@import url(components/boite-envellope.css);
 
 /*layouts*/
 @import url(layouts/sections-filtres-timbres.css);
@@ -22,6 +23,7 @@
 @import url(layouts/nav-secondaire.css);
 @import url(layouts/boite-cartes-timbre-catalogue.css);
 @import url(layouts/filtres-conteneur.css);
+@import url(layouts/accueil.css);
 
 /*atoms*/
 @import url(atoms/button.css);

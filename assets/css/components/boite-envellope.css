@@ -1,0 +1,21 @@
+
+
+.boite-envellope {
+    max-height: 70vh;
+    min-height: 50vh;
+    max-width: 80vw;
+    aspect-ratio: 1/1;
+
+    margin-left: auto;
+    position: relative;
+
+    background-image: 
+        radial-gradient(circle, white 28%, transparent 28%),
+        linear-gradient(45deg, transparent 50%, var(--tertiary-color-lighter) 50%),
+        linear-gradient(-45deg, transparent 50%, white 50%),
+        linear-gradient(-45deg, var(--tertiary-color-lighter) 50%, transparent 50%); 
+
+    background-size:  4rem 4rem, 100% 100%, 100% 100%, 100% 100%;
+    background-position: 0 0, 0 0, 0 0, 0 0;
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+}
