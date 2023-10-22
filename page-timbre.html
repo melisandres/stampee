@@ -9,11 +9,11 @@
 <body>
     <nav class="nav-principale">
         <div class="nav-principale-toggle">
-            <input id="menu-toggle" type="checkbox" />
+            <input id="menu-toggle" type="checkbox">
             <label class="menu-close" for="menu-toggle">✕</label>
             <label class="menu-open" for="menu-toggle">☰</label>
             <div class="nav-principale-options">
-                <a href="accueil.html">Accueil</a>
+                <a href="index.html"><img class="logo" alt="stampee logo" src="assets/icons/logo-1.png"></a>
                 <a href="#">Portail</a>
                 <a href="#">Connexion</a>
                 <a href="#">Philatélie</a>
@@ -26,14 +26,20 @@
             <header>
                 <h1>malaya-penang</h1>
             </header>
-            <main>
+            <div>
                 <div>
-                    <div class="conteneur-timbre-temps">
-                        <button data-timeup="soon" class="button timbre-temps" src="assets/icons/clock.svg"></button>
+                    <div class="conteneur-timbre-bouton">
+                        <button data-timeup="soon" class="button timbre-temps"></button>
                         <span>1 jrs</span>
                     </div>
-                    <button data-bid="outbid" class="timbre-bid active"><span>100$</span></button>
-                    <button class="button timbre-suivre active"></button>
+                    <div class="conteneur-timbre-bouton">
+                        <button data-bid="outbid" class="timbre-bid active"><span>100$</span></button>
+                        <span>miser</span>
+                    </div>
+                    <div class="conteneur-timbre-bouton">
+                        <button class="button timbre-suivre active"></button>
+                        <span>aimer</span>
+                    </div>
                 </div>
 
                 <section class="infos-grands-ecrans">
@@ -74,7 +80,7 @@
                     </div>
                 </section>
             
-            </main>
+            </div>
         </div>
     </main>
     

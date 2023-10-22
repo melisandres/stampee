@@ -1,8 +1,9 @@
 .nav-secondaire{
+    font-family: var(--accent-font);
     display: flex;
     background-color: var(--main-color-lighter);
     padding: var(--space-xxl);
-    padding-top: 100px;
+    padding-top: 30px;
     gap: 30px;
     align-items:first baseline;
     justify-content: space-between;
@@ -10,7 +11,8 @@
 }
 
 .nav-secondaire a{
-    padding: var(--space-xxl);
+/*     padding-left: var(--space-xxl);
+    padding-right: var(--space-xxl); */
     background-color: var(--main-color-lighter);
     font-size: var(--text-md);
 }
@@ -19,9 +21,6 @@
     line-height: 1.5em;
 }
 
-.nav-secondaire p{
-    padding-left: var(--space-xxl);
-}
 
 .nav-secondaire .terms-and-conditions{
     font-size: var(--text-xs);
@@ -36,9 +35,15 @@
 }
 
 @media screen and (max-width: 750px) {
-
     .nav-secondaire{
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .nav-secondaire{
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }

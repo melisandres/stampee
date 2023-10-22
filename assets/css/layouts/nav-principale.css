@@ -6,6 +6,7 @@
     display: flex;
     gap: clamp(var(--space-xl), 2vw, var(--space-xxl));
     justify-content: space-between;
+    align-items: center;
     font-size: clamp(var(--text-xxs), var(--text-sm), var(--text-lg));
     font-family: var(--accent-font);
     color: var(--main-color-darker);
@@ -13,16 +14,22 @@
     padding-right: var(--space-xl);
 }
 
-.nav-principale-options a{
+/*all the top nav links but the logo*/
+.nav-principale-options a:not(:first-child){
     padding-top: var(--space-xxl);
     padding-bottom: var(--space-xxl);
     border-bottom: 3px solid transparent;
 }
 
 
-.nav-principale a:hover{
+.nav-principale a:hover:not(:first-child){
     border-bottom: 3px solid var(--accent-color-dark);
     color:black;
+}
+/*just the logo*/
+.nav-principale a:hover:first-child{
+    filter: opacity(65%);
+
 }
 
 .nav-principale-toggle input[type="checkbox"], .nav-principale-toggle label {

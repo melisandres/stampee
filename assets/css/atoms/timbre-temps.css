@@ -6,11 +6,6 @@
     flex-shrink: 0;
 }
 
-.conteneur-timbre-temps{
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-}
 .timbre-temps~span{
     max-width: 50px;
 }

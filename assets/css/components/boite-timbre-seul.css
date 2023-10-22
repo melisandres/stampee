@@ -10,6 +10,11 @@
     margin-left: clamp(3px, 3.5vw, 70px);
     margin-right: clamp(3px, 3.5vw, 70px);
     padding-bottom: 50px;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+}
+.boite-timbre-seul ul li{
+    line-height: 2.70em;
 }
 
 .boite-timbre-seul .details-petits-ecrans{
@@ -22,7 +27,7 @@
     justify-content: space-around;
 
     width: 100%;
-    gap: var(--space-xl);
+    gap: var(--space-xxxl);
     padding-top: var(--space-md);
     padding-bottom: var(--space-lg);
     padding-left: var(--space-xxxl);

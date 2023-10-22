@@ -4,12 +4,7 @@
     justify-content: space-between;
 }
 
-.accueil main{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    align-items: stretch;
-}
+    
 
 .accueil h1{
     z-index: 2;
@@ -17,6 +12,14 @@
     align-self: center;
     transition: translateX, .5s;
     flex-shrink: 1;
+}
+.accueil main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex-grow: 1;
+    align-items: stretch;
 }
 
 .accueil h1::after{
@@ -31,16 +34,18 @@
     cursor: pointer;
 }
 
-@media (max-width: 650px) {
-    .accueil main{
-        display: block;
-        position: relative;
+.accueil main{
+    display: block;
+    position: relative;
+
+}
+.accueil h1{
+    position: absolute;
+    top: 46.2%;
+    margin-right: var(--space-xxxl);
     }
-    .accueil h1{
-        position: absolute;
-        top: 45%;
-        margin-right: var(--space-xxxl);
-    }
+
+@media (max-width: 800px) {
     .accueil h1::after{
         color: var(--main-color-dark);
     }

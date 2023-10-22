@@ -1,13 +1,16 @@
+.accueil main.boite-envellope {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: stretch;
 
-
-.boite-envellope {
-    max-height: 70vh;
+    /* max-height: 100%;
     min-height: 50vh;
     max-width: 80vw;
-    aspect-ratio: 1/1;
-
+    aspect-ratio: 1/1; */
+/* 
     margin-left: auto;
-    position: relative;
+    position: relative; */
 
     background-image: 
         radial-gradient(circle, white 28%, transparent 28%),
@@ -16,6 +19,9 @@
         linear-gradient(-45deg, var(--tertiary-color-lighter) 50%, transparent 50%); 
 
     background-size:  4rem 4rem, 100% 100%, 100% 100%, 100% 100%;
-    background-position: 0 0, 0 0, 0 0, 0 0;
+    background-position: 6em 0, 6em 0, 6em 0, 6em 0;
     background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+}
+.boite-envellope p{
+    color: var(--tertiary-color-lighter);
 }

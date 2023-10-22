@@ -1,0 +1,5 @@
+.logo{
+    filter: invert(90) sepia(63%) saturate(1476%) hue-rotate(194deg) brightness(99%) contrast(97%);
+    max-height: 70px;
+
+}

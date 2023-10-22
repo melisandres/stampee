@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Stampee|Enchères</title>
+    <title>Stampee|Timbre</title>
 </head>
-<body>
+<body class="accueil">
     <nav class="nav-principale">
         <div class="nav-principale-toggle">
             <input id="menu-toggle" type="checkbox" />
             <label class="menu-close" for="menu-toggle">✕</label>
             <label class="menu-open" for="menu-toggle">☰</label>
             <div class="nav-principale-options">
-                <a href="accueil.html">Accueil</a>
+                <a href="index.html"><img alt="stampee logo" class="logo" src="assets/icons/logo-1.png"></a>
                 <a href="#">Portail</a>
                 <a href="#">Connexion</a>
                 <a href="#">Philatélie</a>
@@ -22,216 +21,43 @@
             </div>
         </div>
     </nav>
-    <div class="airmail-stripes"></div>
-
-    <div class="sections-filtres-timbres">
-        <div class="filtres-conteneur">
-            <form class="filtres-catalogue">
-                <h2>trier: </h2>    
-                <div class="section-radios">
-                    <div class="ascendant">
-                        <input type="radio" name="ordre-sujet" value="temps" id="temps">
-                        <label for="temps">
-                            temps&nbsp;restant
-                        </label>
-                    </div>
-                    <div class="ascendant">
-                        <input type="radio" name="ordre-sujet" value="condition" id="condition">
-                        <label for="condition">
-                            condition
-                        </label>
-                    </div>
-                    <div class="ascendant">
-                        <input type="radio" name="ordre-sujet" value="prix" id="prix">
-                        <label for="prix">
-                            prix
-                        </label>
-                    </div>
-                </div>
-
-                <h2>filtrer: </h2>   
-                <select name="theme" id="">theme
-                    <option value="">sujet de timbre</option>
-                    <option value="animal">animal</option>
-                    <option value="art">art</option>
-                    <option value="historique">historique</option>
-                    <option value="nature">nature</option>
-                    <option value="personne">personne</option>
-                    <option value="vehicule">vehicule</option>
-                </select>
-
-                <div class="range-filtres">
-                    <label>
-                        condition
-                    </label>
-                    <input type="range" name="filter-condition" id="" min="0" max="5" step="1">
-                </div>
-                <div class="range-filtres">
-                    <label>
-                        rareté
-                    </label>
-                    <input type="range" name="filter-rareté" id="" min="0" max="5" step="1">
-                </div>
-                
-                <div class="checkbox-filtres">
-                    <div>
-                        <input type="checkbox" name="certifie" id="certifie">
-                        <label for="certifie">
-                            certifié
-                        </label>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" name="coup-de-coeur" id="coup-de-coeur">
-                        <label for="coup-de-coeur">
-                            coup de coeur
-                        </label>
-                    </div>
-                </div>
-            </form>
-
-            <div class="carte-vedette-mini">
-                <h3>coup de coeur</h3>
-                <h4>inverted jenny</h4>
-                <img src="assets/img/inverted-jenny.webp" alt="">
-                <div class="timbre-boutons">
-                    <div class="conteneur-timbre-temps">
-                        <button data-timeup="soon" class="button timbre-temps"src="assets/icons/clock.svg"></button>
-                        <span>23hrs</span>
-                    </div>
-                    <button class="button timbre-suivre active"></button>
-                    <button  data-bid="outbid" class="timbre-bid"><span>700k</span></button>
-                </div>
-            </div>
-            
+    <main class="boite-envellope">
+        <h1>Misez</h1>
+        <div>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
+            <p>Timbres</p>
         </div>
-
-        
-        <div class="boite-cartes-timbre-catalogue">
-
-            <h2 class="category-title">nouveautés</h2>
-            <article class="carte-timbre-catalogue">
-                <div class="conteneur-timbre-temps">
-                    <button data-timeup="soon" class="button timbre-temps" src="assets/icons/clock.svg"></button>
-                    <span>3jrs</span>
-                </div>
-                <a href="./page-timbre.html">
-                    <img src="assets/img/malaya-penang-30cents.jpg" alt="" >
-                </a>
-                <div class="timbre-boutons">
-                    <button class="button timbre-suivre active"></button>
-                    <button data-bid="outbid" class="timbre-bid active"><span>100$</span></button>
-                </div>
-                <div class="text-timbre">
-                    <h4 class="timbre-nom">malaya-penang</h4>
-                    <p class="timbre-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident harum voluptate quae quas architecto maiores reprehenderit et facilis, cupiditate sapiente! </p>
-                </div>
-            </article>
-
-            <article class="carte-timbre-catalogue">
-                <div class="conteneur-timbre-temps">
-                    <button data-timeup="later" class="button timbre-temps"src="assets/icons/clock.svg"></button>
-                    <span>7jrs</span>
-                </div>
-                <img src="assets/img/france-25centimes.jpg" alt="">
-                <div class="timbre-boutons">
-                    <button class="button timbre-suivre"></button>
-                    <button data-bid="front-runner" class="timbre-bid"><span>1$</span></button>
-                </div>
-                <div class="text-timbre">
-                    <h4 class="timbre-nom">france 25 centimes</h4>
-                    <p class="timbre-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident harum voluptate quae quas architecto maiores reprehenderit et facilis, cupiditate sapiente! </p>
-                </div>
-            </article>
-
-            <h2 class="category-title">archives</h2>
-
-            <article class="carte-timbre-catalogue">
-                <div class="conteneur-timbre-temps">
-                    <button data-timeup="over" class="button timbre-temps"src="assets/icons/clock.svg"></button>
-                    <span>42jrs</span>
-                </div>
-                <img src="assets/img/india-postage-1a.jpg" alt="">
-                <div class="timbre-boutons">
-                    <button class="button timbre-suivre"></button>
-                    <button  data-bid="" class="timbre-bid"><span>5$</span></button>
-                </div>
-                <div class="text-timbre">
-                    <h4 class="timbre-nom">india postage</h4>
-                    <p class="timbre-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident harum voluptate quae quas architecto maiores reprehenderit et facilis, cupiditate sapiente! </p>
-                </div>
-            </article>
-
-            <article class="carte-timbre-catalogue">
-                <div class="conteneur-timbre-temps">
-                    <button data-timeup="over" class="button timbre-temps"src="assets/icons/clock.svg"></button>
-                    <span>78jrs</span>
-                </div>
-                <img src="assets/img/lot-burma-myanmar.jpg" alt="">
-                <div class="timbre-boutons">
-                    <button class="button timbre-suivre"></button>
-                    <button  data-bid="" class="timbre-bid"><span>3$</span></button>
-                </div>
-                <div class="text-timbre">
-                    <h4 class="timbre-nom">lot Burma Myanmar</h4>
-                    <p class="timbre-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident harum voluptate quae quas architecto maiores reprehenderit et facilis, cupiditate sapiente! </p>
-                </div>
-            </article>
-
-            <article class="carte-timbre-catalogue">
-                <button data-timeup="over" class="button timbre-temps"src="assets/icons/clock.svg"></button>
-                <img src="assets/img/washington-3cents.webp" alt="">
-                <div class="timbre-boutons">
-                    <button class="button timbre-suivre"></button>
-                    <button data-bid="" class="timbre-bid"><span>95$</span></button>
-                </div>
-                <div class="text-timbre">
-                    <h4 class="timbre-nom">Washington 3 cents</h4>
-                    <p class="timbre-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident harum voluptate quae quas architecto maiores reprehenderit et facilis, cupiditate sapiente! </p>
-                </div>
-            </article>
-
-            <article class="carte-timbre-catalogue">
-                <button data-timeup="over" class="button timbre-temps"src="assets/icons/clock.svg"></button>
-                <img src="assets/img/usa-2cents.jpg" alt="">
-                <div class="timbre-boutons">
-                    <button class="button timbre-suivre"></button>
-                    <button data-bid="" class="timbre-bid"><span>13$</span></button>
-                </div>
-                <div class="text-timbre">
-                    <h4 class="timbre-nom">usa 2 cents</h4>
-                    <p class="timebre-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident harum voluptate quae quas architecto maiores reprehenderit et facilis, cupiditate sapiente! </p>
-                </div>
-            </article>
-            <article class="carte-timbre-catalogue">
-                <button data-timeup="over" class="button timbre-temps"src="assets/icons/clock.svg"></button>
-                <img src="assets/img/canada-5cents.jpg" alt="">
-                <div class="timbre-boutons">
-                    <button class="button timbre-suivre"></button>
-                    <button data-bid="outbid" class="timbre-bid"><span>45$</span></button>
-                </div>
-                <div class="text-timbre">
-                    <h4 class="timbre-nom">canada 5 cents</h4>
-                    <p class="timebre-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident harum voluptate quae quas architecto maiores reprehenderit et facilis, cupiditate sapiente! </p>
-                </div>
-            </article>
-
-            <article class="carte-timbre-catalogue">
-                <button data-timeup="over" class="button timbre-temps"src="assets/icons/clock.svg"></button>
-                <img src="assets/img/canada-5cents-beaver.jpg" alt="">
-                <div class="timbre-boutons">
-                    <button class="button timbre-suivre"></button>
-                    <button data-bid="" class="timbre-bid"><span>400$</span></button>
-                </div>
-                <div class="text-timbre">
-                    <h4 class="timbre-nom">canada beaver</h4>
-                    <p class="timebre-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident harum voluptate quae quas architecto maiores reprehenderit et facilis, cupiditate sapiente! </p>
-                </div>
-            </article>
-
-        </div>
-    </div>
-
+    </main>
     <footer>
         <nav class="nav-secondaire">
             <div>
@@ -244,6 +70,5 @@
             <a class="terms-and-conditions" href="#">termes & conditions</a>
         </nav>
     </footer>
-    
 </body>
 </html>
